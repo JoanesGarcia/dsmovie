@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Form() {
 
     const movie = {
         id: 1,
-        image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg",
-        title: "Duna",
+        //image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg",
+        //title: "Duna",
+        image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/63O5iixxXSmyOaBas7ek1tkeVra.jpg",
+        title: "Homem Aranha 3",
         count: 2,
         score: 4.5
     };
@@ -34,7 +37,10 @@ function Form() {
                         <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
                     </div>
                 </form >
-                <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                <Link to="/">
+                    <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                </Link>
+
             </div >
         </div >
     )
