@@ -1,17 +1,22 @@
 import MovieScore from "components/MovieScore";
 import { Link } from "react-router-dom";
+import { Movie } from "types/movie";
 
-function MoviewCard() {
+type Props = {
+    movie: Movie;
+}
 
-    const movie = {
-        id: 1,
-        //image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg",
-        //title: "Duna",
-        image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/63O5iixxXSmyOaBas7ek1tkeVra.jpg",
-        title: "Homem Aranha 3",
-        count: 2,
-        score: 4.5
-    };
+function MoviewCard( {movie} : Props ) {
+
+    //const movie = {
+    //    id: 1,
+    //    //image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg",
+    //    //title: "Duna",
+    //    image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/63O5iixxXSmyOaBas7ek1tkeVra.jpg",
+    //    title: "Homem Aranha 3",
+    //    count: 2,
+    //    score: 4.5
+    //};
 
     return (
         <div>
